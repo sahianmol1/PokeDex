@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.pokemonDetails.PokemonDetailsFragment">
+
+    <ImageView
+        android:id="@+id/ivPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:contentDescription="@string/this_is_pokemon_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvPokemonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Pokemon Name"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPokemon" />
+
+    <TextView
+        android:id="@+id/tvPokemonType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Water"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPokemonName" />
+
+    <TextView
+        android:id="@+id/tvWeightInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="83.0 kg"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvHeightInfo"
+        app:layout_constraintTop_toBottomOf="@+id/tvPokemonType" />
+
+    <TextView
+        android:id="@+id/tvHeightInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="83.0 kg"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvWeightInfo"
+        app:layout_constraintTop_toBottomOf="@+id/tvPokemonType" />
+
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvHeightInfo"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeightInfo" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvWeightInfo"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeightInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

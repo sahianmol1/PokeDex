@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PokéDex</string>
+    <string name="this_is_pokemon_image">This is Pokemon Image</string>
+    <string name="retry">Retry</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+</resources>
